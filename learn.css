@@ -220,7 +220,7 @@ footer {
 @media (max-width: 870px) {
   footer {
     position: absolute;
-    top: 330%;
+    top: 350%;
     min-width: 100%;
   }
 }
@@ -229,10 +229,5 @@ footer {
     position: absolute;
     top: 600%;
     min-width: 100%;
-  }
-}
-@media (max-height: 900px) {
-  footer {
-    display: none;
   }
 }/*# sourceMappingURL=learn.css.map */
