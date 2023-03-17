@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@mixin section(){
+    height: 100vh;
+}
+@mixin center(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin link(){
+    text-decoration: none;
+    color: $primary;
+    font-family: 'Prompt', sans-serif;
+    font-size: large;
+}
+@mixin logo(){
+    font-family: 'Work Sans', sans-serif;
+    font-size: larger;
+    color: $heading;
+}
+$banner: #0A3D62;
+$primary: #000;
+$heading:#000;
+$border_hover:#393E46;
+$blog-p: #4a5260;
+@mixin heading(){
+    font-family: 'Jost', sans-serif;
+    color: $heading;
+    font-size: larger;
+}
+@mixin blog-head(){
+    font-size: small;
+    color: $primary;
+    font-family: 'Work Sans', sans-serif;
+}
+@mixin primary(){
+    font-family: 'EB Garamond', serif;
+    color: $primary;
+    font-size: 18px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
+}
+::-webkit-scrollbar {
+    width: 10px;   
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:$heading; 
+    border-radius: 10px;
+  }
+body{
+    background-color: #F6F1F1;
+    min-width: 100%;       
+    max-width: 100%;
+}
+.home{
+    @include section();
+}
+.menu i{
+    color: #C9D6DF;
+    font-size: 48px;
+}
+.nav__bar{
+    @include center();
+    display: grid;
+    z-index: 1000000;
+    display: none;
+}
+.nav__bar.active{
+    display: block;
+}
+.nav__bar a{
+    text-decoration: none;
+    display: grid;
+    color: #000;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+}
+.nav__bar i:hover{
+    opacity: 0.7;
+}
+nav .logo{
+    @include logo();
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.hide.show{
+    display: none;
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+}
+.card{
+    background-color: transparent;
+    width: 270px;
+    height: 500px;
+    margin: 10px;
+    flex-shrink: 2;
+}
+.card-img{
+    height: 150px;
+    border-radius: 10px;
+}
+.card-1{
+    background-image: url('img/html.png');
+    background-position: center;
+    background-size: cover;
+}
+.card-2{
+    background-image: url('img/css.png');
+    background-position: center;
+    background-size: cover;
+}
+.card-3{
+    background-image: url('img/js.png');
+    background-position: center;
+    background-size: cover;
+}
+.card-4{
+    background-image: url('img/python.png');
+    background-position: center;
+    background-size: cover;
+}
+.card-5{
+    background-image: url('img/react.png');
+    background-size: cover;
+}
+.card-6{
+    background-image: url('img/C.png');
+    background-size: cover;
+}
+.card-7{
+    background-image: url('img/C++.png');
+    background-size: cover;
+    background-position: center
+}
+.card-8{
+    background-image: url('img/Node.JS.png');
+    background-size: cover;
+    background-position: center
+}
+.card-9{
+    background-image: url('img/Express.JS.png');
+    background-size: cover;
+    background-position: center
+}
+.card-10{
+    background-image: url('img/Full\ Stack.png  ');
+    background-size: cover;
+    background-position: center
+}
+.card h2{
+    @include heading();
+    color: $primary !important;
+    margin-left: 1rem;
+}
+.card p{
+    padding: 10px;
+    @include primary();
+    color: $blog-p;
+    font-family: 'Work Sans', sans-serif;
+}
+.card a{
+    background-color: $border_hover;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    @include link();
+    color: #fff !important;
+}
+.card a:hover{
+    opacity: 0.7;
+}
+footer{
+    position: absolute;
+    top: 170%;
+    min-width: 100%;
+}
+@media (max-width:1450px){
+    footer{
+        position: absolute;
+        top: 200%;
+        min-width: 100%;
+    }
+}
+@media (max-width:1160px){
+    footer{
+        position: absolute;
+        top: 270%;
+        min-width: 100%;
+    }
+}
+@media (max-width:870px){
+    footer{
+        position: absolute;
+        top: 300%;
+        min-width: 100%;
+    }
+}
+@media (max-width:580px){
+    footer{
+        position: absolute;
+        top: 600%;
+        min-width: 100%;
+    }
+}

@@ -1,15 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  transition: 0.5s linear;
+  transition: 0.5s ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0A3D62;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333333;
+}
+
+.menu {
+  display: none;
 }
 
 body {
-  background-color: #d3d3d3;
-  overflow-x: hidden;
+  background-color: #F6F1F1;
+}
+
+.home {
+  height: 60vh;
+}
+
+.big-features {
+  height: 100vh;
 }
 
 nav {
@@ -18,1388 +48,275 @@ nav {
 }
 
 nav .logo img {
-  position: absolute;
-  width: 207px;
-  height: 59.33px;
+  max-height: 50px;
+  margin-top: 2rem;
+  min-width: 100px;
+}
+
+nav .navbar ul {
   margin-top: 50px;
 }
 
-nav .navbar {
-  margin-top: 73px;
+nav .navbar ul li {
+  display: inline-block;
 }
 
-nav .navbar a {
+nav .navbar ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
+  font-size: 1rem;
+  padding: 20px 20px 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 27.6px;
+}
+
+nav .navbar ul li a:hover {
+  color: #0A3D62;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .right {
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.container .right img {
+  max-height: 300px;
+  min-width: auto;
+}
+
+.container .left {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+
+.container .left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.container .left button {
+  background: #0A3D62;
+  border-radius: 10px;
   padding: 10px 10px 10px;
 }
 
-nav .menu {
-  display: none;
-}
-
-.hero-left {
-  top: 261px;
-  left: 500px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-
-.hero-left h1 {
-  width: 449px;
-  height: 61px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  color: #000000;
-}
-
-.hero-left button {
-  width: 258px;
-  height: 61px;
-  background: #0A3D62;
-  border-radius: 10px;
-  position: absolute;
-  width: 228px;
-  height: 54px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 49px;
-  color: #FFFFFF;
-  border: none;
-}
-
-.hero-left a {
+.container .left a button {
   text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.hero-right {
-  position: absolute;
-  top: 150px;
-  left: 750px;
+.container .left a button:hover {
+  opacity: 0.7;
 }
 
-.hero-right img {
-  width: 400px;
-  height: 325px;
-  border-radius: 20px;
-}
-
-.herotwo-left img {
-  position: absolute;
-  width: 497px;
-  height: 449px;
-  top: 55%;
-  left: 254px;
-}
-
-.herotwo-right h1 {
-  width: 449px;
-  height: 61px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  color: #000000;
-  margin-bottom: 50px;
-}
-
-.herotwo-right button {
-  background: #0A3D62;
-  border-radius: 10px;
-  position: absolute;
-  width: 328px;
-  height: 54px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 49px;
-  color: #FFFFFF;
-  border: none;
-}
-
-.herotwo-right a {
-  text-decoration: none;
-}
-
-.herotwo-right {
-  position: absolute;
-  width: 497px;
-  height: 449px;
-  top: 75%;
-  left: 800px;
-}
-
-.herothree-left img {
-  position: absolute;
-  width: 492px;
-  height: 393px;
-  left: 254px;
-  top: 889px;
-  border-radius: 20px;
-}
-
-.herothree-right h1 {
-  width: 449px;
-  height: 61px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  color: #000000;
-  margin-bottom: 50px;
-}
-
-.herothree-right button {
-  background: #0A3D62;
-  border-radius: 10px;
-  position: absolute;
-  width: 328px;
-  height: 54px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 49px;
-  color: #FFFFFF;
-  border: none;
-}
-
-.herothree-right a {
-  text-decoration: none;
-}
-
-.herothree-right {
-  position: absolute;
-  width: 497px;
-  height: 449px;
-  top: 135%;
-  left: 800px;
-}
-
-@media (max-width: 1200px) {
-  .hero-left {
-    top: 261px;
-    left: 400px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 150px;
-    left: 650px;
-  }
-  .hero-right img {
-    width: 400px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 55%;
-    left: 154px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 75%;
-    left: 670px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 492px;
-    height: 393px;
-    left: 154px;
-    top: 889px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 135%;
-    left: 650px;
-  }
-}
-@media (max-width: 1070px) {
-  .hero-left {
-    top: 261px;
-    left: 400px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 150px;
-    left: 650px;
-  }
-  .hero-right img {
-    width: 300px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 55%;
-    left: 154px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 75%;
-    left: 670px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 492px;
-    height: 393px;
-    left: 154px;
-    top: 889px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 135%;
-    left: 650px;
-  }
-}
-@media (max-width: 1040px) {
-  .hero-left {
-    top: 261px;
-    left: 400px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 150px;
-    left: 600px;
-  }
-  .hero-right img {
-    width: 300px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 55%;
-    left: 154px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 75%;
-    left: 500px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 154px;
-    top: 889px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 328px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 135%;
-    left: 470px;
-  }
-}
 @media (max-width: 1000px) {
-  nav .logo img {
+  .container .right {
     position: absolute;
-    width: 207px;
-    height: 59.33px;
-    margin-top: 50px;
-  }
-  nav .navbar {
-    margin-top: 73px;
-  }
-  nav .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27.6px;
-    padding: 10px 10px 10px;
-  }
-  .hero-left {
-    top: 261px;
-    left: 400px;
+    left: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
+  }
+  .container .left {
     position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 150px;
-    left: 500px;
-  }
-  .hero-right img {
-    width: 300px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 55%;
-    left: 90px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 238px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 75%;
-    left: 395px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 80px;
-    top: 889px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: 50px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 238px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 135%;
-    left: 400px;
-  }
-}
-@media (max-width: 810px) {
-  nav .logo img {
-    position: absolute;
-    width: 207px;
-    height: 59.33px;
-    margin-top: 50px;
-  }
-  nav .navbar {
-    margin-top: 73px;
-  }
-  nav .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27.6px;
-    padding: 5px 5px 5px;
-  }
-  .hero-left {
-    top: 261px;
-    left: 350px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 150px;
-    left: 430px;
-  }
-  .hero-right img {
-    width: 250px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 55%;
-    left: 90px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 75%;
-    left: 395px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 80px;
-    top: 889px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 135%;
-    left: 400px;
-  }
-}
-@media (max-width: 705px) {
-  nav .logo img {
-    position: absolute;
-    width: 207px;
-    height: 59.33px;
-    margin-top: 50px;
-  }
-  nav .navbar {
-    margin-top: 73px;
-    position: absolute;
-    display: grid;
     top: 30%;
-    left: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 700px) {
+  .container .right {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+  }
+  .container .right img {
+    max-width: 250px;
+  }
+  .container .left {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    font-size: 3rem;
+  }
+  .navbar {
+    position: absolute;
+    top: -50%;
+    z-index: 1000;
+    left: 50%;
+    width: 20%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
   }
   nav .navbar.active {
-    left: 50%;
-  }
-  .hide.show {
-    display: none;
+    top: 30%;
   }
   nav .menu {
     display: block;
-    font-size: 50px;
-    margin-top: 50px;
-    color: #0A3D62;
+    font-size: 2.5rem;
+    margin-top: 30px;
   }
-  nav .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27.6px;
-    padding: 5px 5px 5px;
-    font-size: 30px;
-    color: #FFFFFF;
-    padding: 20px 20px 20px;
-    z-index: 1000;
-    font-weight: bold;
-  }
-  .hero-left {
-    top: 261px;
-    left: 550px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
-    position: absolute;
-    top: 450px;
-    left: 300px;
-  }
-  .hero-right img {
-    width: 250px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 115%;
-    left: 270px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 178%;
-    left: 350px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 290px;
-    top: 1470px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 250%;
-    left: 300px;
-  }
-}
-@media (max-width: 650px) {
-  nav .logo img {
-    position: absolute;
-    width: 207px;
-    height: 59.33px;
-    margin-top: 50px;
-    margin-left: -20px;
-  }
-  nav .navbar {
-    margin-top: 73px;
-    position: absolute;
-    display: grid;
-    top: 30%;
-    left: -70%;
-  }
-  nav .navbar.active {
-    left: 50%;
-    margin-left: -50px;
-  }
-  .hide.show {
+  .right.hide {
     display: none;
   }
-  nav .menu {
-    display: block;
-    font-size: 50px;
-    margin-top: 50px;
-    color: #0A3D62;
-    margin-right: -280px;
-  }
-  nav .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27.6px;
-    padding: 5px 5px 5px;
-    font-size: 30px;
-    color: #FFFFFF;
-    padding: 20px 20px 20px;
-    z-index: 1000;
-    font-weight: bold;
-  }
-  .hero-left {
-    top: 261px;
-    left: 430px;
+}
+.big-features .container .right {
+  position: absolute;
+  left: 30%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.big-features .container .left {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+
+.features .container .right {
+  position: absolute;
+  left: 70%;
+  top: 110%;
+  transform: translate(-50%, -50%);
+}
+
+.features .container .left {
+  position: absolute;
+  top: 110%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .big-features .container .right {
+    position: absolute;
+    left: 50%;
+    top: 100%;
     transform: translate(-50%, -50%);
+  }
+  .big-features .container .left {
     position: absolute;
+    top: 130%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
   }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
+  .features .container .right {
     position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
+    left: 50%;
+    top: 170%;
+    transform: translate(-50%, -50%);
   }
-  .hero-left a {
-    text-decoration: none;
-  }
-  .hero-right {
+  .features .container .left {
     position: absolute;
-    top: 450px;
-    left: 200px;
-  }
-  .hero-right img {
-    width: 250px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 115%;
-    left: 130px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 178%;
-    left: 230px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 200px;
-    top: 1590px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 245%;
-    left: 200px;
+    top: 200%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
   }
 }
-@media (max-width: 200px) {
-  nav .logo img {
+footer {
+  min-height: 15vh;
+  background-color: #0A3D62;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 20px 20px;
+}
+
+footer .nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .heading {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    min-height: 15vh;
+    background-color: #0A3D62;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    width: 207px;
-    height: 59.33px;
-    margin-top: 50px;
-    margin-left: -20px;
+    min-width: 100%;
+    top: 220%;
   }
-  nav .navbar {
-    margin-top: 73px;
+  footer .nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px 20px;
+  }
+  footer .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer .heading {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    min-height: 15vh;
+    background-color: #0A3D62;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    display: grid;
-    top: 30%;
-    left: -70%;
+    min-width: 100%;
+    top: 220%;
   }
-  nav .navbar.active {
-    left: 50%;
-    margin-left: -50px;
-  }
-  .hide.show {
+  footer .nav {
     display: none;
   }
-  nav .menu {
-    display: block;
-    font-size: 50px;
-    margin-top: 50px;
-    color: #0A3D62;
-    margin-right: -480px;
-  }
-  nav .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27.6px;
-    padding: 5px 5px 5px;
-    font-size: 30px;
-    color: #FFFFFF;
+  footer .nav ul li {
+    list-style: none;
+    display: inline-block;
     padding: 20px 20px 20px;
-    z-index: 1000;
-    font-weight: bold;
   }
-  .hero-left {
-    top: 261px;
-    left: 430px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .hero-left h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .hero-left button {
-    width: 258px;
-    height: 61px;
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 228px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .hero-left a {
+  footer .nav ul li a {
     text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  .hero-right {
-    position: absolute;
-    top: 450px;
-    left: 200px;
-  }
-  .hero-right img {
-    width: 250px;
-    height: 325px;
-    border-radius: 20px;
-  }
-  .herotwo-left img {
-    position: absolute;
-    width: 307px;
-    height: 449px;
-    top: 115%;
-    left: 130px;
-  }
-  .herotwo-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herotwo-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herotwo-right a {
-    text-decoration: none;
-  }
-  .herotwo-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 178%;
-    left: 230px;
-  }
-  .herothree-left img {
-    position: absolute;
-    width: 302px;
-    height: 393px;
-    left: 200px;
-    top: 1590px;
-    border-radius: 20px;
-  }
-  .herothree-right h1 {
-    width: 449px;
-    height: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 44px;
-    color: #000000;
-    margin-bottom: -10px;
-  }
-  .herothree-right button {
-    background: #0A3D62;
-    border-radius: 10px;
-    position: absolute;
-    width: 138px;
-    height: 54px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 49px;
-    color: #FFFFFF;
-    border: none;
-  }
-  .herothree-right a {
-    text-decoration: none;
-  }
-  .herothree-right {
-    position: absolute;
-    width: 497px;
-    height: 449px;
-    top: 245%;
-    left: 200px;
+  footer .heading {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
   }
 }/*# sourceMappingURL=style.css.map */
