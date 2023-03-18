@@ -4,6 +4,7 @@ h1 {
   text-align: center;
   color: #4B4453 !important;
   font-family: "Bebas Neue", cursive;
+  text-transform: capitalize;
 }
 
 p {
@@ -31,8 +32,30 @@ p {
 }
 
 .code p {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+  color: white;
   font-size: largex;
-  background-color: #E8E8E8;
+  background-color: #3d2f2f;
+  font-family: monospace;
+  line-height: 2rem;
+}
+
+p {
+  line-height: 2.5rem;
+}
+
+::-moz-selection {
+  color: #f5f9ff;
+  background-color: #955b5b;
+}
+
+::selection {
+  color: #f5f9ff;
+  background-color: #955b5b;
+}
+
+ul li {
+  color: #4B4453;
+  font-family: monospace;
+  line-height: 3rem;
 }/*# sourceMappingURL=hyper.css.map */
