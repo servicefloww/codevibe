@@ -16,15 +16,16 @@
     color: $primary;
     font-family: 'Prompt', sans-serif;
     font-size: large;
+    background-color: #2C73D2;
 }
 @mixin logo(){
     font-family: 'Work Sans', sans-serif;
     font-size: larger;
     color: $heading;
 }
-$banner: #0A3D62;
-$primary: #000;
-$heading:#000;
+$banner: #2C73D2;
+$primary: #B0A8B9;
+$heading:#2C73D2;
 $border_hover:#393E46;
 $blog-p: #4a5260;
 @mixin heading(){
@@ -65,7 +66,7 @@ $blog-p: #4a5260;
     border-radius: 10px;
   }
 body{
-    background-color: #F6F1F1;
+    background-color: #E1EDF2;
     min-width: 100%;       
     max-width: 100%;
 }
@@ -176,7 +177,7 @@ nav{
 }
 .card h2{
     @include heading();
-    color: $primary !important;
+    color: #404258 !important;
     margin-left: 1rem;
 }
 .card p{
@@ -195,37 +196,4 @@ nav{
 }
 .card a:hover{
     opacity: 0.7;
-}
-footer{
-    position: absolute;
-    top: 170%;
-    min-width: 100%;
-}
-@media (max-width:1450px){
-    footer{
-        position: absolute;
-        top: 200%;
-        min-width: 100%;
-    }
-}
-@media (max-width:1160px){
-    footer{
-        position: absolute;
-        top: 270%;
-        min-width: 100%;
-    }
-}
-@media (max-width:870px){
-    footer{
-        position: absolute;
-        top: 350%;
-        min-width: 100%;
-    }
-}
-@media (max-width:580px){
-    footer{
-        position: absolute;
-        top: 600%;
-        min-width: 100%;
-    }
 }
